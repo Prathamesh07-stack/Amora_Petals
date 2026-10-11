@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amora Petals — Handcrafted Bouquets</title>
+  <meta name="description" content="Amora Petals creates one-of-a-kind handcrafted bouquets for every occasion. Browse our gallery, explore pricing, and place your bespoke order today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Petal and Bloom home">
+        <span class="logo-icon">✿</span>
+        <span class="logo-text">Amora Petals</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#order" class="nav-link">Order</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="#pricing" class="mobile-link">Pricing</a></li>
+        <li><a href="#order" class="mobile-link">Order</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="hero_bouquet.jpg" alt="Beautiful handcrafted bouquet with pink roses and peonies on marble" class="hero-img" fetchpriority="high" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Handcrafted with Love</p>
+      <h1 class="hero-title reveal">Every bloom<br /><em>tells a story</em></h1>
+      <p class="hero-subtitle reveal">Bespoke, handmade bouquets for weddings, celebrations, and every beautiful moment in between.</p>
+      <div class="hero-cta reveal">
+        <a href="#gallery" id="hero-cta-gallery" class="btn btn-primary">Explore Gallery</a>
+        <a href="#order" id="hero-cta-order" class="btn btn-ghost">Place an Order</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="scroll-dot"></span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>✿ Fresh Blooms</span>
+      <span>✦ Handcrafted</span>
+      <span>✿ Made with Love</span>
+      <span>✦ Same-Day Delivery</span>
+      <span>✿ Weddings &amp; Events</span>
+      <span>✦ Custom Orders</span>
+      <span>✿ Fresh Blooms</span>
+      <span>✦ Handcrafted</span>
+      <span>✿ Made with Love</span>
+      <span>✦ Same-Day Delivery</span>
+      <span>✿ Weddings &amp; Events</span>
+      <span>✦ Custom Orders</span>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow reveal">Our Work</p>
+        <h2 class="section-title reveal">A bloom for every moment</h2>
+        <p class="section-sub reveal">Each bouquet is a unique creation — no two are ever alike.</p>
+      </div>
+      <div class="gallery-filters reveal" role="tablist" aria-label="Bouquet filter">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="romantic" role="tab" aria-selected="false" id="filter-romantic">Romantic</button>
+        <button class="filter-btn" data-filter="minimal" role="tab" aria-selected="false" id="filter-minimal">Minimalist</button>
+        <button class="filter-btn" data-filter="dried" role="tab" aria-selected="false" id="filter-dried">Dried</button>
+        <button class="filter-btn" data-filter="seasonal" role="tab" aria-selected="false" id="filter-seasonal">Seasonal</button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item reveal" data-category="romantic">
+          <div class="gallery-card">
+            <img src="bouquet_gallery_2.jpg" alt="Lush bridal bouquet with white garden roses" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-label">Bridal Bliss</p>
+              <span class="gallery-tag">Romantic</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="seasonal">
+          <div class="gallery-card">
+            <img src="bouquet_gallery_6.jpg" alt="Pastel rainbow gradient bouquet" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-label">Pastel Dream</p>
+              <span class="gallery-tag">Seasonal</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="dried">
+          <div class="gallery-card">
+            <img src="bouquet_gallery_1.jpg" alt="Dried flower bouquet in terracotta vase" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-label">Earthy Pampas</p>
+              <span class="gallery-tag">Dried</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="minimal">
+          <div class="gallery-card">
+            <img src="bouquet_gallery_3.jpg" alt="Minimalist tulip bouquet in kraft paper" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-label">Tulip Wrap</p>
+              <span class="gallery-tag">Minimalist</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="seasonal">
+          <div class="gallery-card">
+            <img src="bouquet_gallery_4.jpg" alt="Vibrant spring bouquet with sunflowers" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-label">Sunshine Burst</p>
+              <span class="gallery-tag">Seasonal</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="romantic">
+          <div class="gallery-card">
+            <img src="bouquet_gallery_5.jpg" alt="Dark romantic bouquet with burgundy roses" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-label">Midnight Velvet</p>
+              <span class="gallery-tag">Romantic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow reveal">Packages</p>
+        <h2 class="section-title reveal">Crafted to fit every occasion</h2>
+        <p class="section-sub reveal">Choose a collection or reach out for a fully custom creation.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="pricing-card reveal" id="pricing-petite">
+          <div class="pricing-top">
+            <span class="pricing-icon">🌸</span>
+            <h3 class="pricing-name">Petite Posy</h3>
+            <p class="pricing-tagline">Sweet &amp; simple</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount">799</span>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li>8–10 stems, hand-tied</li>
+            <li>Kraft paper wrap + twine</li>
+            <li>1 flower variety of your choice</li>
+            <li>Perfect for gifting</li>
+          </ul>
+          <a href="#order" id="pricing-petite-cta" class="btn btn-outline">Order Now</a>
+        </article>
+
+        <article class="pricing-card pricing-card--featured reveal" id="pricing-classic">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-top">
+            <span class="pricing-icon">🌹</span>
+            <h3 class="pricing-name">Classic Bloom</h3>
+            <p class="pricing-tagline">Timeless &amp; elegant</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount">1,499</span>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li>20–25 stems, lush arrangement</li>
+            <li>Satin ribbon wrap</li>
+            <li>3 flower varieties + greenery</li>
+            <li>Free message card</li>
+            <li>Same-day delivery available</li>
+          </ul>
+          <a href="#order" id="pricing-classic-cta" class="btn btn-primary">Order Now</a>
+        </article>
+
+        <article class="pricing-card reveal" id="pricing-luxury">
+          <div class="pricing-top">
+            <span class="pricing-icon">💐</span>
+            <h3 class="pricing-name">Luxury Grand</h3>
+            <p class="pricing-tagline">A show-stopping statement</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount">2,999</span>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li>40–50 stems, grand arrangement</li>
+            <li>Premium velvet ribbon</li>
+            <li>5+ flower varieties</li>
+            <li>Personalised card + packaging</li>
+            <li>Priority delivery</li>
+          </ul>
+          <a href="#order" id="pricing-luxury-cta" class="btn btn-outline">Order Now</a>
+        </article>
+      </div>
+      <p class="pricing-note reveal">✦ All bouquets are made fresh to order. Custom arrangements available on request.</p>
+    </div>
+  </section>
+
+  <!-- ORDER FORM -->
+  <section id="order" class="section order-section">
+    <div class="container order-container">
+      <div class="order-info reveal">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Let's create<br /><em>your perfect bloom</em></h2>
+        <p class="order-desc">Fill in the form and I'll get back to you within 24 hours to discuss your vision, occasion, and budget.</p>
+        <ul class="order-features" role="list">
+          <li><span class="feature-icon">✿</span> 100% handcrafted, never factory-made</li>
+          <li><span class="feature-icon">✿</span> Fresh seasonal flowers sourced locally</li>
+          <li><span class="feature-icon">✿</span> Custom colors, sizes &amp; themes available</li>
+          <li><span class="feature-icon">✿</span> Same-day delivery in select areas</li>
+        </ul>
+        <div class="social-links">
+          <a href="https://instagram.com" id="instagram-link" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow on Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            @amora.petals
+          </a>
+        </div>
+      </div>
+      <form id="order-form" class="order-form reveal" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-name" class="form-label">Your Name *</label>
+            <input type="text" id="form-name" name="name" class="form-input" placeholder="Priya Sharma" required autocomplete="name" />
+            <span class="form-error" id="error-name" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="form-phone" class="form-label">Phone / WhatsApp *</label>
+            <input type="tel" id="form-phone" name="phone" class="form-input" placeholder="+91 98765 43210" required autocomplete="tel" />
+            <span class="form-error" id="error-phone" role="alert"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="form-email" class="form-label">Email Address *</label>
+          <input type="email" id="form-email" name="email" class="form-input" placeholder="you@example.com" required autocomplete="email" />
+          <span class="form-error" id="error-email" role="alert"></span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-occasion" class="form-label">Occasion</label>
+            <select id="form-occasion" name="occasion" class="form-input form-select">
+              <option value="">Select occasion</option>
+              <option value="birthday">Birthday</option>
+              <option value="wedding">Wedding</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="graduation">Graduation</option>
+              <option value="gifting">Just Because</option>
+              <option value="event">Corporate Event</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="form-package" class="form-label">Package</label>
+            <select id="form-package" name="package" class="form-input form-select">
+              <option value="">Select package</option>
+              <option value="petite">Petite Posy — ₹799</option>
+              <option value="classic">Classic Bloom — ₹1,499</option>
+              <option value="luxury">Luxury Grand — ₹2,999</option>
+              <option value="custom">Custom / Unsure</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="form-date" class="form-label">Delivery / Pickup Date</label>
+          <input type="date" id="form-date" name="date" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label for="form-message" class="form-label">Tell me about your vision *</label>
+          <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="E.g. I'd love soft pinks and whites for a birthday surprise, with a touch of dried flowers..." rows="4" required></textarea>
+          <span class="form-error" id="error-message" role="alert"></span>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-primary btn-full">
+          <span class="btn-text">Send My Request ✿</span>
+          <span class="btn-loading" aria-hidden="true">Sending…</span>
+        </button>
+        <div class="form-success" id="form-success" role="status" aria-live="polite">
+          <span>🌸</span>
+          <p>Your request has been sent! I'll get back to you within 24 hours.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <span class="footer-logo">✿ Amora Petals</span>
+        <p class="footer-tagline">Every bouquet, handcrafted with heart.</p>
+      </div>
+      <div class="footer-links">
+        <nav aria-label="Footer navigation">
+          <ul role="list">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#order">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com" id="footer-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Amora Petals. Made with 🌸 by hand.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
